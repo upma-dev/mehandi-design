@@ -1,17 +1,16 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { MehndiDesign, MehndiCone, WorkshopEvent, MehndiQuote, UserReview } from './types';
 
-// Let's get the absolute file paths we generated earlier
-// If any file has multiple generated versions, we use the correct timestamped JPEG paths.
-export const HERO_IMAGE = '/src/assets/images/hero_mehndi_banner_1781514273009.jpg';
-export const CONES_PRODUCT_IMAGE = '/src/assets/images/mehndi_cones_product_1781514290365.jpg';
-export const BRIDAL_ARTWORK_IMAGE = '/src/assets/images/bridal_mehndi_artwork_1781514311238.jpg';
-export const WORKSHOP_BANNER_IMAGE = '/src/assets/images/workshop_prep_banner_1781514329080.jpg';
-export const MEASUREMENT_SKETCH_IMAGE = '/src/assets/images/measurement_sketch_design_1781514350883.jpg';
+import heroImage from './assets/images/hero_mehndi_banner_1781514273009.jpg';
+import conesProductImage from './assets/images/mehndi_cones_product_1781514290365.jpg';
+import bridalArtworkImage from './assets/images/bridal_mehndi_artwork_1781514311238.jpg';
+import workshopBannerImage from './assets/images/workshop_prep_banner_1781514329080.jpg';
+import measurementSketchImage from './assets/images/measurement_sketch_design_1781514350883.jpg';
+
+export const HERO_IMAGE = heroImage;
+export const CONES_PRODUCT_IMAGE = conesProductImage;
+export const BRIDAL_ARTWORK_IMAGE = bridalArtworkImage;
+export const WORKSHOP_BANNER_IMAGE = workshopBannerImage;
+export const MEASUREMENT_SKETCH_IMAGE = measurementSketchImage;
 
 export const CLIENT_INFO = {
   name: "Sapna Mehndi Art",
@@ -80,7 +79,7 @@ export const MEHNDI_DESIGNS: MehndiDesign[] = [
     id: "design-3",
     title: "Classic Traditional Festives",
     category: "festive",
-    image: "/src/assets/images/bridal_mehndi_artwork_1781514311238.jpg", // reuse or high quality fallback
+    image: BRIDAL_ARTWORK_IMAGE, // reuse or high quality fallback
     description: "Elegant checkered boxes, flower vine trails, and paisley curls on the fingers, designed for immediate festive charm and rapid stain enhancement using Kumkum paste.",
     timeToComplete: "1.5 - 2 Hours",
     complexity: "Traditional",
